@@ -5,6 +5,9 @@ def hamming(string1, string2):
     """
     Hamming distance
     https://en.wikipedia.org/wiki/Hamming_distance
+
+    A map/reduce functional implementation
+    https://github.com/tinfante/daily-programmer-clojure/blob/master/src/daily_programmer/easy_353_closest_string.clj
     """
     if len(string1) == len(string2):
         return sum(0 if c1 == c2 else 1 for c1, c2 in zip(string1, string2))
